@@ -2,7 +2,7 @@
   "name": "serverless-functions",
   "version": "0.0.1",
   "main": "index.js",
-  "author": "Jason Lengstorf <jason@lengstorf.com> (https://jason.af)",
+  "author": "anamwp",
   "license": "MIT",
   "scripts": {
     "dev": "serve public"
@@ -13,5 +13,14 @@
   "devDependencies": {
     "http-server": "^0.12.3",
     "serve": "^11.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anamwp/serverless-functions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anamwp/serverless-functions/issues"
+  },
+  "homepage": "https://github.com/anamwp/serverless-functions#readme",
+  "description": ""
 }
