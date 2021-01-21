@@ -16,7 +16,7 @@ exports.handler = async () => {
         return singleImgUrl;
     }
 
-    function getAllData (){
+    var myData = function getAllData (){
         return corgis.map( async x => {
             let photoUrl = await fetchSingleImage(x.id);
             console.log('photoUrl - ', photoUrl);
@@ -31,8 +31,8 @@ exports.handler = async () => {
         // return unsplashData;
     }
 
-    var finalData = await getAllData();
-    // var [finalData] = await Promise.all([unsplashData]);
+    // var finalData = await getAllData();
+    var finalData = await Promise.all(myData());
     console.log("final", finalData);
 
     return {
